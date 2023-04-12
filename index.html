@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Favorite Characters</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<h1>Yash Kheni</h1>
+	<h2>Series Name: Naruto</h2>
+	<h3>Student Number: 0816059</h3>
+	<div class="search-container">
+		<label for="search">Search by First Name:</label>
+		<input type="text" id="search" name="search">
+	</div>
+	<div class="filter-container">
+		<button id="filter-A-M">A - M (<span class="filter-count"></span>)</button>
+		<button id="filter-N-Z">N - Z (<span class="filter-count"></span>)</button>
+	</div>
+	<table id="characters-table">
+  <thead>
+    <tr>
+      <th><a href="#" data-sort-by="firstName">First Name <span class="sort-chevron"></span></a></th>
+      <th><a href="#" data-sort-by="lastName">Last Name <span class="sort-chevron"></span></a></th>
+      <th><a href="#" data-sort-by="gender">Gender <span class="sort-chevron"></span></a></th>
+	  <th><a href="#" data-sort-by="village">Village <span class="sort-chevron"></span></a></th>
+      <th><a href="#" data-sort-by="occupation">Occupation <span class="sort-chevron"></span></a></th>
+      <th><a href="#" data-sort-by="dateOfBirth">Date of Birth <span class="sort-chevron"></span></a></th>
+      
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+</body>
+</html>

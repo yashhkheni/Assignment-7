@@ -1,0 +1,162 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	margin-top: 20px;
+}
+
+table {
+	margin: 0 auto;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 10px;
+	text-align: left;
+}
+
+th a {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+th a:hover {
+	cursor: pointer;
+	color: #555;
+}
+
+th a:visited {
+	color: inherit;
+}
+
+th a[data-sort]::after {
+	content: "";
+	display: inline-block;
+	margin-left: 5px;
+	font-size: 0.8em;
+}
+
+th a[data-sort][data-order="asc"]::after {
+	content: "\25B2";
+}
+
+th a[data-sort][data-order="desc"]::after {
+	content: "\25BC";
+}
+
+.search-container {
+	margin: 20px auto;
+	width: 60%;
+	text-align: center;
+}
+
+.search-container label {
+	font-weight: bold;
+}
+
+.search-container input[type=text] {
+	padding: 10px;
+	margin: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+.filter-container {
+	margin: 20px auto;
+	width: 60%;
+	text-align: center;
+}
+
+.filter-container button {
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 4px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.filter-container button:hover {
+	background-color: #3e8e41;
+}
+
+.filter-container button:focus {
+	outline: none;
+}
+
+.filter-container button:active {
+	background-color: #
+}
+
+.sort-chevron {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+.sort-chevron.asc:before {
+  content: "\25B2";
+  margin-left: -40PX;
+}
+
+.sort-chevron.desc:before {
+  content: "\25BC";
+  margin-left: -50px;
+}
+
+		table {
+			border-collapse: collapse;
+			width: 100%;
+		}
+		th, td {
+		text-align: left;
+		padding: 8px;
+		border: 1px solid black;
+		}
+
+	th {
+		background-color: #4CAF50;
+		color: white;
+	}
+
+	tr:nth-child(even) {
+		background-color: #f2f2f2;
+	}
+
+	input[type=text] {
+		padding: 6px;
+		border-radius: 4px;
+		box-sizing: border-box;
+		border: none;
+		margin-bottom: 10px;
+		width: 100%;
+	}
+
+	.filter-buttons {
+		display: flex;
+		justify-content: center;
+		margin-top: 10px;
+	}
+
+	.filter-buttons button {
+		background-color: #4CAF50;
+		color: white;
+		padding: 8px 16px;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+		margin-right: 10px;
+	}
+
+	.filter-buttons button.active {
+		background-color: #2E8B57;
+	}
+
